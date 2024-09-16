@@ -1,0 +1,737 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.demo{
+    color: blue;
+    width: 120px;
+    height: 50px;
+    border-radius: 50px;
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    z-index: 10px;
+}
+
+.demo-btn {
+    background-color: white;
+    color: black;
+    padding: 20px 20px;
+    border-radius: 65px;
+    border: -1px solid black;
+    cursor: pointer;
+}
+
+.demo-btn:hover{
+    background-color: ;
+    border: 1px solid black;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+    min-width: 200px;
+    width: 550px;
+    height: 300px;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+.en{
+background-color: rgba(0, 0, 255, 0.568);
+border-radius: 50%;
+padding: 10px;
+}
+.lanbtn{
+   background-color: transparent;
+   border: none;
+   font-size: 20px; 
+   font-weight: bold;
+}
+.rtxt{
+    margin-left: 50px;
+    padding: 5px;
+    color: black;
+}
+
+/* .lanbtn:hover{
+    position: absolute;
+  background-color: #f9f9f9;
+  /* min-width: 160px; */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* z-index: 1; */
+
+ */
+.imgmg{
+    max-width: 50%; /* Adjust the percentage based on how much space you want the image to take */
+    height: auto;
+    margin-left: 10px; /* Space between text and image */
+    border-radius: 8px; /* Optional: for rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for better visibility */
+}
+.features{
+    padding: 100px 20px;
+    line-height: 1.1;
+    /* padding: 50px; */
+    font-size: 22px;
+}
+.switch{
+    width: 50px;
+    height: 30px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: wrap;
+    padding: 50px, 50px;
+    /* background-color: rgb(235,241,247); */
+}
+.row2{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: wrap;
+    padding: 50px, 50px;
+    background-color: rgb(235,241,247);
+}
+.tex-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    color: white;
+    margin-bottom: 50px;
+    color: rgb(4,2,55);
+
+}
+
+.img-col{
+    /* flex-basis: 50%; */
+    /* margin-bottom: 20px; */
+    /* padding: 30px 0; */
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+    
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 600px;
+    margin-bottom: 20px;
+}
+.features{
+    /* background-color: black; */
+    color: black;
+    flex-wrap: wrap;
+    /* padding: 40px; */
+    margin-bottom: 70px;
+    margin-left: 70px;
+}
+.position{
+    /* font-size: 23px; */
+}
+.expert-button {
+    background-color: rgba(255, 60, 0, 0.863); /* Light grey background */
+    color: white; /* Text color */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    box-shadow: 10px 10px 0px navy; /* 3D effect with red shadow to the left and upwards */
+    margin-top: 20px;
+}
+
+.expert-button:hover {
+    box-shadow: 0px 0px 0px blue; /* Remove the shadow on hover */
+    transform: translate(10px, 10px); /* Move the button downwards and rightwards */
+    background-color: navy;
+    color: white;
+}
+.Expert{
+    margin-left: 20px;
+
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: -19px solid black;
+    position: relative;
+    margin-top: 20px;
+}
+.Expert:hover{
+    border: 1px solid black;
+    
+}
+.imgdiv{
+    background-color: rgb(235,241,247);
+    
+}
+.pg2txt{
+    font-size: 40px;
+    margin-top: -150px;
+    margin-left: 560px;
+}
+.unbabeltxt{
+    margin-right: 750px;
+    /* display: flex; */
+
+  
+    
+}
+
+.imgc{
+    width: 150px;
+    height: 150px;
+    margin-left: 40px;
+    background-color: rgb(235,241,247);
+}
+.Worldwide{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(17,15,65);
+    margin-top: 100px;
+    text-align: center;
+}
+.addidas{
+    margin-right: 1050px;
+    margin-top: 50px;
+    /* margin: auto; */
+
+}
+.patagonia div{
+    margin-left: 10px;
+    margin-top: -1050px;
+}
+.fart{
+     margin-right: 200px; 
+    margin-bottom: 180px;
+}
+.pas{
+    margin-right: 10px;
+    margin-bottom: 180px;
+}
+.imggg  {
+    
+    display: block;
+    width: 450px;
+    height: 150%;
+    margin: auto;
+}
+.text-col2{
+    
+}
+.tex{
+    font-size: 50px;
+    color: rgb(4,2,55);
+}
+.position1{
+    font-size: 23px;
+}
+.performance{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(4,2,55);
+    background-color: rgb(220,238,235);
+    padding: 80px;
+}
+.check{
+    color: rgb(4,2,55);
+    text-align: center;
+    background-color: rgb(250,244,235);
+    background-size: 50%;
+    padding: 100px;
+}
+.Discoverdiv{
+    color:  rgb(4,2,55);
+    text-align: center;
+    background-color: rgb(255,174,188);
+    background-size: 50%;
+    padding: 100px;
+}
+/* Container for both sections */
+.merge-container {
+    display: flex;
+    width: 100%;
+    width: 1348px;
+    height: 300px;
+    text-align: center;
+}
+
+/* Each section takes up 50% of the container */
+.merge-container .half-section {
+    width: 50%;
+    padding: 20px; /* Optional: adjust padding as needed */
+}
+
+/* Apply background colors */
+.check {
+    background-color: rgb(250,244,235); /* Replace with actual color */
+    padding: 100px;
+    wi
+}
+
+.Discoverdiv {
+    background-color: rgb(255,174,188); /* Replace with actual color */
+    padding: 100px;
+}
+.back{
+    background-image: url(Background-Featured-Integration-02.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    /* padding: ;    */
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    /* margin-bottom: 20px; */
+    color: white;
+    margin-bottom: 50px;
+    /* color: rgb(4,2,55); */
+    z-index: 10;
+    
+}
+.h22{
+    font-size: ;
+    margin-right: 550px;
+    /* margin-bottom:-500px ; */
+    padding: 70px;
+    
+}
+.h21{
+    font-size: 50px;
+    
+}
+/* .shadowed-image {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 10px; Optional: for rounded corners */
+    
+    .card5{
+        height: 160px;
+        width: 150px;
+        border: 3px solid #ebf2f2a4;
+        margin-left: 880PX ;
+        border-radius: 2px;
+        margin-top: 20px;
+        background-color: white; /* Light grey background */
+        color: black; /* Text color */
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 20px; /* Rounded corners */
+        cursor: pointer;
+        position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+        box-shadow: 10px 10px 0px navy; /* 3D effect with red shadow to the left and upwards */
+        margin-top: -350px;
+        z-index: 10;
+      }
+      
+      .card5:hover{
+        /* box-shadow: 2px 6px 100px rgb(226,226,226); */
+        box-shadow: 0px 0px 0px blue; /* Remove the shadow on hover */
+    transform: translate(10px, 10px); /* Move the button downwards and rightwards */
+    background-color: white;
+    color: black;
+        
+      }
+      .card6{
+        height: 160px;
+        width: 150px;
+        border: 3px solid #ebf2f2a4;
+        margin-left: -200px ;
+        border-radius: 2px;
+        margin-top: 150px;
+        background-color: white; /* Light grey background */
+        color: black; /* Text color */
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 20px; /* Rounded corners */
+        cursor: pointer;
+        /* z-index: 2; */
+        /* position: relative; */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+        box-shadow: 10px 10px 0px navy; /* 3D effect with red shadow to the left and upwards */
+        /* margin-top: -1px; */
+        /* margin-right: 1500px; */
+        z-index: 10;
+      }
+      
+      .card6:hover{
+        /* box-shadow: 2px 6px 100px rgb(226,226,226); */
+        box-shadow: 0px 0px 0px blue; /* Remove the shadow on hover */
+    transform: translate(10px, 10px); /* FMove the button downwards and rightwards */
+    background-color: white;
+    color: black;
+        z-index: 10;
+      }
+      .imgtext1{
+    margin-bottom: 850px;
+    margin-left: 150px;
+    margin-top: -120px;
+
+      }
+      .imgtext2{
+        margin-bottom: 850px;
+        margin-left: 300px;
+        margin-top: -1000px;
+    
+      }
+
+
+      .card8{
+        height: 340px;
+        width: 400px;
+        border: 3px solid rgb(195,199,241);
+        margin-left: 50px ;
+        border-radius: 8px;
+        margin-top: 20px;
+        z-index: 2px;
+      }
+      
+      .card8:hover{
+        /* box-shadow: 2px 6px 100px rgb(226,226,226);
+         */
+         border: 2px solid black;
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         cursor: pointer;
+      }
+      .imgtxth2{
+        font-size: 100px;
+        text-align: center;
+        color: rgb(56,67,208);
+      }
+      .imgtextt{
+        text-align: center;
+        padding: 30px;
+      }
+      .far{
+        padding: 20px;
+        margin-left: 90px;
+      }
+      .h1opacity{
+        opacity: 0.7;
+      }
+
+      
+      .card10{
+        height: 340px;
+        width: 400px;
+        border: 3px solid rgb(195,199,241);
+        margin-left: 500px ;
+        border-radius: 8px;
+        /* margin-top: 20px; */
+        margin-top: -359px;
+        box-shadow: 10px 10px 0px rgb(4,2,55);
+        z-index: 2px;
+      }
+      .card10:hover{
+         /* box-shadow: 2px 6px 100px rgb(226,226,226); */
+         
+         border: 2px solid black;
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         cursor: pointer;
+      }
+      .imgtxth2{
+        font-size: 100px;
+        text-align: center;
+        color: rgb(56,67,208);
+      }
+      .imgtextt{
+        text-align: center;
+        padding: 30px;
+      }
+      .far{
+        padding: 20px;
+        margin-left: 90px;
+      }
+      .h1opacity{
+        opacity: 0.7;
+        font-size: 20px;
+
+      }
+
+
+      .card9{
+        height: 340px;
+        width: 400px;
+        border: 3px solid rgb(195,199,241);
+        margin-left: 920px ;
+        border-radius: 8px;
+        margin-top: -320px;
+      }
+      
+      .card9:hover{
+        /* box-shadow: 2px 6px 100px rgb(226,226,226);
+         */
+         border: 2px solid black;
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         cursor: pointer;
+      }
+      .imgtxth2{
+        font-size: 100px;
+        text-align: center;
+        color: rgb(56,67,208);
+      }
+      .imgtextt{
+        text-align: center;
+        padding: 30px;
+      }
+      .bac{
+        background-color: rgb(235,241,247);
+        margin-top: -50px;
+        background-size: contain;
+        padding: 20px;
+      }
+      .far{
+        padding: 20px;
+        margin-left: 90px;
+      }
+      .h1opacity{
+        opacity: 0.7;
+      }
+      .feature{
+        background-color: rgb(255,255,255);
+      }
+      .roww{
+        background-color: rgb(255,255,255);
+      }
+      .te-col{
+        margin-left: 200px;
+        color: rgb(4,2,55);
+      }
+      .positio{
+        font-size: 18px;
+        opacity: 0.7;
+
+      }
+      .material-symbols-outlined:hover{
+        margin-left: 20px;
+      }
+      .imgcol{
+        margin-left: 150px;
+      }
+      .featuress{
+        font-size: 40px;
+        color: rgb(4,2,55);
+        font-weight: bold;
+        padding: 50px;
+        margin-left: 100px;
+      }
+      .divimg{
+        /* width: 20px;
+        height: ; */
+        margin-left: 150px;
+      }
+      .star1{
+        margin-left: 150px;
+        font-size: 15px;
+        font-weight: bold;
+        color: rgb(4,2,55);
+        line-height: 1.8;
+      }
+      .star2{
+        margin-left: 390px;
+        font-size: 15px;
+        font-weight: bold;
+        color: rgb(4,2,55);
+        line-height: 1.8;
+        margin-top: -255px;
+      }
+      .star3{
+        margin-left: 690px;
+        font-size: 15px;
+        font-weight: bold;
+        color: rgb(4,2,55);
+        line-height: 1.8;
+        margin-top: -255px;
+      }
+      .star4{
+        margin-left: 960px;
+        font-size: 15px;
+        font-weight: bold;
+        color: rgb(4,2,55);
+        line-height: 1.8;
+        margin-top: -255px;
+      }
+      .user{
+        margin-top: 150px;
+        text-align: center;
+      }
+      .a{
+        font-size: 50px;
+        font-weight: bold;
+        color: rgb(4,2,55);
+        text-align: center;
+      }
+      .divhexa{
+        text-align: center;
+        padding: 30px;
+      }
+      .pinkbg{
+        background-image: url(CTA-Background-Pink.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 60vh;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-family: sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        padding: 50px;
+      }
+      .started{
+        margin-bottom: -100;
+      }
+      .text-transition {
+        font-size: 50px;
+        font-weight: bold;
+        color: black;
+        position: relative;
+        
+      }
+      .text-transition::after {
+        content: "Recreation";
+        animation: text-transition 12s linear infinite;
+        opacity: 1;
+      }
+      @keyframes text-transition {
+        0% { content: "Reactive"; opacity: 1; transform: translateX(100%); }
+        5% { transform: translateX(0); }
+        10% { opacity: 0; }
+        16.67% { content: "Productive"; opacity: 1; transform: translateX(100%); }
+        21.67% { transform: translateX(0); }
+        26.67% { opacity: 0; }
+        33.34% { content: "Reactive"; opacity: 1; transform: translateX(100%); }
+        38.34% { transform: translateX(0); }
+        43.34% { opacity: 0; }
+        66.67% { content: "Simple"; opacity: 1; transform: translateX(100%); }
+        71.67% { transform: translateX(0); }
+        76.67% { opacity: 0; }
+        83.34% { content: "Modern"; opacity: 1; transform: translateX(100%); }
+        88.34% { transform: translateX(0); }
+        93.34% { opacity: 0; }
+        100% { content: "Recreation"; opacity: 1; transform: translateX(0); }
+        
+      }
+      .text-transition{
+        color: rgb(56,67,208);
+      }
+      
+      .text-transition::after {
+        transition: opacity 0.5s ease-in-out;
+        transform: 0.5s ease-in-out;
+      }
+      .expertbutton {
+        background-color: rgb(56,67,208); /* Light grey background */
+        color: white; /* Text color */
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 30px; /* Rounded corners */
+        cursor: pointer;
+        position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+        box-shadow: 10px 10px 0px white; /* 3D effect with red shadow to the left and upwards */
+        margin-top: 80px;
+        width: 140px;
+        font-weight: bold;
+        height: 50px;
+    }
+    
+    .expertbutton:hover {
+        box-shadow: 0px 0px 0px rgb(255,255,255); /* Remove the shadow on hover */
+        transform: translate(10px, 10px); /* Move the button downwards and rightwards */
+        background-color: rgb(255,255,255);
+        color: rgb(4,2,55);
+    }
+    .Expertz{
+        margin-left: 20px;
+    
+        background-color: white;
+        color: black;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 30px;
+        border: -19px solid black;
+        position: relative;
+        margin-top: 20px;
+    }
+    .Expertz:hover{
+        border: 1px solid black;
+    }
+    .filter{
+        background-image: url(filter.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 60vh;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-family: sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        padding: 50px;
+      }
+      
+      
+
+      
+
+
+
+

@@ -1,0 +1,356 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.pg1-img {
+    width: 150px;
+    height: 35px;
+    /* Adjust the space between the logo and nav items */
+    margin-right: 20px;
+    max-width: 100%;
+    
+}
+
+/* Navbar */
+.navbar {
+    z-index: 1000;
+    display: flex;
+    align-items: center; /* Aligns items vertically centered */
+    justify-content: flex-start; /* Keeps items in a row */
+    /* width: 100%; */
+    padding: 10px 50px;
+    position:relative;
+    top: 0;
+    margin-top: 20px;
+    margin-left: 160px;
+    /* background-color: #F2F8F3; */
+    background: none; /* Remove background color */
+}
+.navbar a{
+    position: absolute;
+    display: flex;
+}
+
+/* Align nav-links 20px away from logo */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-left: 20px; /* 20px gap between the logo and the nav items */
+}
+
+/* Individual nav items */
+.nav-item {
+    position: relative;
+    margin-left: 20px; /* Space between each item */
+    font-size: 16px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Hover dropdown */
+.nav-item .dropdown, .nav-item .dropdown1, .nav-item .dropdown2 {
+    display: none;
+    position: absolute;
+    top: 100%; /* Dropdown below the parent */
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+    min-width: 200px;
+    border-radius: 10px;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .dropdown, .nav-item:hover .dropdown1, .nav-item:hover .dropdown2 {
+    display: block;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+
+.signin {
+    margin-left: 980px;
+    color: rgb(18,34,49);
+    height: 50px;
+    width: 80px;
+    background-color: rgb(242,248,243);
+    border-radius: 10px;
+    z-index: 1000;
+    margin-top: -30px;
+    
+}
+.create{
+    margin-left: 15px;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(18,34,49);
+}
+.pg1btn{
+    margin-top: -42px;
+    margin-left: -80px;
+
+}
+/* Container specifically for typing animation */
+.container {
+    text-align: center;
+    margin-top: 50px; /* Adjust as needed */
+    display: inline-block; /* Prevents block-level expansion */
+    max-width: 100%;
+    
+}
+
+/* Typing animation */
+.typing-animation {
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;  /* Hide overflow */
+    border-right: 3px solid black; /* Blinking cursor */
+    display: inline-block;
+    animation: typing 6s steps(45, end) infinite alternate, blink 0.75s step-end infinite;
+    /* Animation Explanation:
+       - `6s`: Full cycle for typing and erasing
+       - `infinite alternate`: This makes the animation go forward and then backward
+       - `steps(45, end)`: Simulates typing one character at a time */
+}
+
+/* Keyframe for the typing effect */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%; /* Fully typed */
+    }
+    100% {
+        width: 1; /* Backward animation */
+    }
+}
+
+/* Keyframe for the blinking cursor */
+@keyframes blink {
+    from { border-right-color: black; }
+    to { border-right-color: transparent; }
+}
+.container2{
+    margin-left: 150px;
+    font-size: 20px;
+}
+.googleplay{
+    margin-left: 120px;
+    cursor: pointer;
+}
+.containerimg{
+    margin-left: 650px;
+    margin-top: -300px;
+}
+
+body{
+    background-color: rgb(242,248,243);
+}
+.join{
+    font-size: 50px;
+    text-align:center ;
+    font-family: sans-serif;
+    font-weight: 550;
+
+}
+.pg3{
+    margin-top: 150px;
+
+}
+.create2{
+    text-align: center;
+}
+.nopng{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.pg4{
+    margin-top: 150px;
+}
+.solution{
+    font-size: 30px;
+    margin-left: 250px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-bottom: -150px;
+}
+.phone{
+    margin-top: 15px;
+    width: 550px;
+    background-color: rgb(255,255,255);
+    height: 300px;
+    border-radius: 20px;
+    margin-left: 150px;
+    transition: background-color 0.30s ease-in-out;
+}
+.phone:hover {
+    background-color: rgb(50,150,255);
+}
+.phone1{
+    margin-left: 700px;
+    margin-top: -200px;
+}
+
+.Discover{
+    margin-top: 180px;
+    margin-left: 300px;
+}
+.cardify{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 20px;
+}
+.effort{
+    margin-left: 20px;
+}
+/* For small screens (Mobile) */
+@media (max-width: 768px) {
+    .pg1-img {
+        width: 100px; /* Smaller logo */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack the navigation items */
+        gap: 10px;
+    }
+
+    .signin, .create {
+        width: 100%; /* Full-width buttons */
+    }
+
+    .container h1 {
+        font-size: 5vw; /* Adjust heading size */
+    }
+
+    .pg1btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .containerimg, .googleplay, .phone1 {
+        width: 100%; /* Ensure images take full width */
+        margin: 0 auto;
+    }
+
+    .join, .solution, .cardify {
+        font-size: 1.5rem; /* Adjust text size for mobile */
+        text-align: center;
+    }
+}
+
+/* For medium screens (Tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        padding: 10px 50px;
+    }
+
+    .container h1 {
+        font-size: 3em;
+    }
+
+    .containerimg {
+        width: 80%; /* Ensure proper image sizing on tablets */
+        margin: 0 auto;
+    }
+
+    .signin, .create {
+        width: auto;
+    }
+}
+
+/* For large screens (Desktops) */
+@media (min-width: 1024px) {
+    .pg1-img {
+        width: 150px;
+    }
+
+    .container h1 {
+        font-size: 4em;
+    }
+
+}
+/* For mobile screens */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .pg1-img {
+        width: 40%; /* Adjust the logo size for small screens */
+    }
+
+    .container h1 {
+        font-size: 5vw; /* Make the heading smaller on mobile */
+    }
+
+    .signin, .create {
+        width: 100%; /* Full-width buttons on mobile */
+    }
+
+    .pg1btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .containerimg, .googleplay {
+        width: 100%;
+        height: auto;
+    }
+
+    .solution, .join, .cardify {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .phone, .phone1 {
+        width: 100%;
+    }
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        padding: 10px 50px;
+    }
+
+    .signin, .create {
+        width: auto;
+    }
+
+    .container h1 {
+        font-size: 3em;
+    }
+
+    .containerimg {
+        width: 80%; /* Adjust the size for tablets */
+    }
+}
+
+/* For desktops */
+@media (min-width: 1024px) {
+    .pg1-img {
+        width: 150px;
+    }
+
+    .container h1 {
+        font-size: 4em;
+    }
+}
+
